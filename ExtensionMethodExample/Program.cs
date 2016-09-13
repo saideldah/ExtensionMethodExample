@@ -10,6 +10,16 @@ namespace ExtensionMethodExample
     {
         static void Main(string[] args)
         {
+            string str = "saeed";
+            Console.WriteLine(str.MyExtendedMethod());
+        }
+    }
+
+    public static class StringExtensions
+    {
+        public static string MyExtendedMethod(this String str)
+        {
+            return "Hello i am extended Method";
         }
     }
 }
